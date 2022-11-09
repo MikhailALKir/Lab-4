@@ -17,7 +17,7 @@ def rand_char(n):
 def clicked():
     number = arg_A.get()
 
-    if len(number) != 6:
+    if len(number) != 6 or not number.isdigit():
         lbl_result.configure(text='Error')
         return
 
